@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Drama OTP - Sign Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #ff9bc9, #7a8cff);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 900px;
+            overflow: hidden;
+            display: flex;
+        }
+        
+        .left-panel {
+            flex: 1;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .right-panel {
+            flex: 1;
+            padding: 40px;
+        }
+        
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .logo h1 {
+            font-size: 28px;
+            color: #9966CC;
+            font-weight: 700;
+        }
+        
+        .logo i {
+            margin-right: 10px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #333;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        
+        .form-group input:focus {
+            outline: none;
+            border-color: #9966CC;
+            box-shadow: 0 0 0 2px rgba(153, 102, 204, 0.2);
+        }
+        
+        .btn {
+            width: 100%;
+            padding: 14px;
+            background-color: #9966CC;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #7a4da3;
+            transform: translateY(-2px);
+        }
+        
+        .login-link {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+        
+        .login-link a {
+            color: #9966CC;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+        
+        .k-drama-showcase {
+            margin-top: 30px;
+        }
+        
+        .k-drama-showcase h3 {
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        
+        .drama-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .drama-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        
+        .instructions {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        
+        .instructions h3 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .instructions ol {
+            padding-left: 20px;
+        }
+        
+        .instructions li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+        
+        .instructions code {
+            background-color: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .left-panel {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h2>Join the K-Drama Community</h2>
+            <p>Share your love for Korean dramas, discover new favorites, and connect with other fans.</p>
+            
+            <div class="k-drama-showcase">
+                <h3>Popular Dramas</h3>
+                <div class="drama-list">
+                    <span class="drama-item">Crash Landing on You</span>
+                    <span class="drama-item">Goblin</span>
+                    <span class="drama-item">Itaewon Class</span>
+                    <span class="drama-item">Hotel Del Luna</span>
+                    <span class="drama-item">Start-Up</span>
+                    <span class="drama-item">Vincenzo</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="right-panel">
+            <div class="logo">
+                <h1><i class="fas fa-play-circle"></i> K-Drama OTP</h1>
+                <p>Create your account</p>
+            </div>
+            
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Create a password" minlength="6" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="favorite-drama">Favorite K-Drama (optional)</label>
+                    <input type="text" id="favorite-drama" placeholder="What's your favorite drama?">
+                </div>
+                
+                <button type="submit" class="btn">Create Account</button>
+            </form>
+            
+            <div class="login-link">
+                Already have an account? <a href="#">Log in</a>
+            </div>
+            
+            <div class="instructions">
+                <h3>How to Run This Project</h3>
+                <ol>
+                    <li>Save this file as <code>signup.html</code> in your <code>kdrama-otp</code> folder</li>
+                    <li>Make sure you have Node.js installed on your computer</li>
+                    <li>Open terminal in your project folder and run:
+                        <ul>
+                            <li><code>npm init -y</code></li>
+                            <li><code>npm install express dotenv bcrypt body-parser</code></li>
+                        </ul>
+                    </li>
+                    <li>Create a <code>server.js</code> file with your backend code</li>
+                    <li>Run your server with <code>node server.js</code></li>
+                    <li>Open your browser and go to <code>http://localhost:3000</code></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('signup-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+            
+            if (password !== confirmPassword) {
+                alert('Passwords do not match!');
+                return;
+            }
+            
+            // In a real application, you would send this data to your server
+            // For now, we'll just show a success message
+            alert('Account created successfully! (This is a frontend demo)');
+            
+            // Reset the form
+            this.reset();
+        });
+    </script>
+</body>
+</html>
